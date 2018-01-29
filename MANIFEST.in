@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include questionnaire *.css
+recursive-include questionnaire *.csv
+recursive-include questionnaire *.html
+recursive-include questionnaire *.ico
+recursive-include questionnaire *.js
+recursive-include questionnaire *.json
+recursive-include questionnaire *.md
+recursive-include questionnaire *.png
+recursive-include questionnaire *.py
+recursive-include questionnaire *.svg
+recursive-include questionnaire *.txt
+recursive-exclude questionnaire *.pyc
