@@ -74,18 +74,21 @@ app_license = "MIT"
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
-
+doctype_js={
+	"Leave Application":["questionnaire.leave_application.js"],
+	
+}
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Leave Application":{
+	       "validate":"questionnaire.customization.validate",
+	
+	}
+}
+
 
 # Scheduled Tasks
 # ---------------
